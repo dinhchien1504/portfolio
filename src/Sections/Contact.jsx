@@ -33,20 +33,44 @@ const Contact = () => {
           Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to life, I’m here to help
           </p>
           <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col space-y-7'> 
+
             <label className='space-y-3 '>
                 <span  className='field-label'>Name</span>
-                <input type="text" className='field-input' required placeholder='Dinh Chien' value= {form.name} onChange={handleChange} />
+                <input 
+                type="text" 
+                className='field-input' 
+                required placeholder='Dinh Chien' 
+                value= {form.name} 
+                onChange={handleChange}
+                 />
             </label>
+
             <label className='space-y-3 '>
                 <span  className='field-label'>Email</span>
-                <input type="text" className='field-input' required placeholder='Dinhhoangchien15042003@gmail.com'onChange={handleChange} value ={form.email}/>
+                <input 
+                type="text"
+                className='field-input'
+                required placeholder='Dinhhoangchien15042003@gmail.com'
+                onChange={handleChange} 
+                value ={form.email}/>
             </label>
-            <label className='space-y-3 '>
-                <span  className='field-label'>Your Message </span>
-                <input type="text" className='field-input' required placeholder='Your Messageeee'onChange={handleChange} value= {form.message} />
+
+            <label className="space-y-3">
+              <span className="field-label">Your message</span>
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                required
+                rows={5}
+                className="field-input"
+                placeholder="Share your thoughts or inquiries..."
+              />
             </label>
-            <button className='field-btn'>
-                Send message <img src={arrup} alt="" className='field-btn_arrow' />
+            
+            <button className='field-btn' type='submit' disabled={loading} >
+                {loading ? "Sendingg..." : "Send Message"} 
+                <img src={arrup} alt="" className='field-btn_arrow' />
             </button>
           </form>
         </div>
