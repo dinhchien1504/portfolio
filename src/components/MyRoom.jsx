@@ -12,7 +12,6 @@ const MyRoom = (props) => {
   const monitorTexture = useTexture(monitor)
   const screenTexture = useTexture(screen)
 
-
   // const { nodes, materials } = useGLTF('/asset/model/hacker-room.glb');
   const { nodes, materials } = useGLTF(Room);
 
@@ -33,20 +32,23 @@ const MyRoom = (props) => {
         geometry={nodes.screen_glass_glass_0.geometry}
         material={materials.glass}
       />
+      
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.table_table_mat_0_1.geometry}
         material={materials.table_mat}
-        >
-        <meshLambertMaterial map={monitorTexture} />
-        </mesh>
+        />
+        {/* <meshLambertMaterial map={monitorTexture} />
+        </mesh> */}
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.table_table_mat_0_2.geometry}
         material={materials.computer_mat}
-      />
+        >
+        <meshLambertMaterial map={monitorTexture} />
+        </mesh>
       <mesh
         castShadow
         receiveShadow

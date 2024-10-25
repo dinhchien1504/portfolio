@@ -83,7 +83,6 @@ import typescript from "../public/assets/typescript.png"
 import framer from "../public/assets/framer.svg"
 
 
-const a = spotlight1;
 
   export const myProjects = [
     {
