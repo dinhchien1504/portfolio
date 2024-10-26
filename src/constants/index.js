@@ -285,6 +285,11 @@ import framer from "../public/assets/framer.svg"
     };
   };
   
+
+  import frm from "../public/assets/framer.svg"
+  import figma from "../public/assets/figma.svg"
+  import Notion from "../public/assets/notion.svg"
+  
   export const workExperiences = [
     {
       id: 1,
@@ -292,7 +297,7 @@ import framer from "../public/assets/framer.svg"
       pos: 'Lead Web Developer',
       duration: '2022 - Present',
       title: "Framer serves as my go-to tool for c  reating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-      icon: '/assets/framer.svg',
+      icon: frm,
       animation: 'victory',
     },
     {
@@ -301,7 +306,7 @@ import framer from "../public/assets/framer.svg"
       pos: 'Web Developer',
       duration: '2020 - 2022',
       title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-      icon: '/assets/figma.svg',
+      icon: figma,
       animation: 'clapping',
     },
     {
@@ -310,7 +315,7 @@ import framer from "../public/assets/framer.svg"
       pos: 'Junior Web Developer',
       duration: '2019 - 2020',
       title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-      icon: '/assets/notion.svg',
+      icon: Notion,
       animation: 'salute',
     },
   ];

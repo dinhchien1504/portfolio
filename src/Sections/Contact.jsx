@@ -101,7 +101,7 @@ const Contact = () => {
             </label>
             
             <button className="field-btn" type="submit" disabled={loading}>
-                {console.log(loading)}
+                {/* {console.log(loading)} */}
                 {loading ? 'Sending...' : 'Send Message'}
 
                 <img src={arrup} alt="" className='field-btn_arrow' />
