@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react'
 import bgcontact from '../public/assets/terminal.png'
 import arrup from '../public/assets/arrow-up.png'
+import emailjs from '@emailjs/browser'
+
 const Contact = () => {
   const formRef = useRef()
   const [loading,setLoading] = useState(false);
@@ -12,13 +14,40 @@ const Contact = () => {
     }
   )
 
-  const handleChange =( ) => {
-    setForm (
-
-    )
+  const handleChange =( {target: {name, value}}) => {
+    setForm ({...form , [name]: value } )
   }
-  const handleSubmit = () => {
 
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      emailjs.send(
+        "service_iz6ngyf",
+        "template_pkj2oca",
+        {
+          from_name : form.name,
+          to_name: 'Dinh chien',
+          from_email: form.email,
+          to_email: 'occho3434@gmail.com',
+          message : form.message
+        },
+        'QWhsgD3GAXN2AL10w'
+      )
+      setLoading(false)
+      alert ("Da gui mail :D ")
+      setForm({
+        name: ' ',
+        email: '',
+        message: ''
+       })
+    } catch (error) {
+      console.log(error);
+      setLoading(false)
+      alert("Error ")
+    }
+    
   }
   return (
     <section className='c-space my-20'>
@@ -38,8 +67,10 @@ const Contact = () => {
                 <span  className='field-label'>Name</span>
                 <input 
                 type="text" 
+                name='name'
                 className='field-input' 
-                required placeholder='Dinh Chien' 
+                required 
+                placeholder='Dinh Chien' 
                 value= {form.name} 
                 onChange={handleChange}
                  />
@@ -48,7 +79,8 @@ const Contact = () => {
             <label className='space-y-3 '>
                 <span  className='field-label'>Email</span>
                 <input 
-                type="text"
+                type="email"
+                name='email'
                 className='field-input'
                 required placeholder='Dinhhoangchien15042003@gmail.com'
                 onChange={handleChange} 
@@ -68,8 +100,10 @@ const Contact = () => {
               />
             </label>
             
-            <button className='field-btn' type='submit' disabled={loading} >
-                {loading ? "Sendingg..." : "Send Message"} 
+            <button className="field-btn" type="submit" disabled={loading}>
+                {console.log(loading)}
+                {loading ? 'Sending...' : 'Send Message'}
+
                 <img src={arrup} alt="" className='field-btn_arrow' />
             </button>
           </form>
