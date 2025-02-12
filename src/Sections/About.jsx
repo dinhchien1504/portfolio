@@ -94,7 +94,7 @@ const About = () => {
                 <div className="grid-container">
                   <img  src={grid3} className="w-full sm:h-[266px] h-fit object-contain" />
                 
-                <div className="">
+                {/* <div className="">
                   <p className="grid-headtext">
                     My Passion Coding
                   </p>
@@ -103,7 +103,7 @@ const About = () => {
                   I love creating incredible things
                   </p>
                 </div>
-                
+                 */}
                 </div>
         </div>
 
