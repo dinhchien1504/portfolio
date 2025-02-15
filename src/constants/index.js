@@ -69,6 +69,10 @@ import spotlight3 from "../public/assets/spotlight3.png"
 import spotlight4 from "../public/assets/spotlight4.png"
 import spotlight5 from "../public/assets/spotlight5.png"
 
+import video1 from "../public/textures/project/1.mp4"
+import video2 from "../public/textures/project/pj2.mp4"
+
+
 
 import text1 from "../public/textures/project/project1.mp4"
 import text2 from "../public/textures/project/project2.mp4"
@@ -91,7 +95,7 @@ import framer from "../public/assets/framer.svg"
       subdesc:
         'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
       href: 'https://moment.liber.vn/',
-      texture: text1,
+      texture: video2,
       logo: logoPJ1,
       logoStyle: {
         backgroundColor: '#2A1816',
@@ -128,7 +132,7 @@ import framer from "../public/assets/framer.svg"
       subdesc:
         'This is a second-hand clothing marketplace where users can buy and sell pre-owned fashion items. The platform allows sellers to list their clothes with detailed descriptions and images, while buyers can browse, search, and filter items based on categories, sizes, and brands. Secure transactions and a user-friendly interface ensure a seamless shopping experience.',
       href: '',
-      texture: text2,
+      texture: video1,
       logo: logoPJ2,
       logoStyle: {
         backgroundColor: '#13202F',
