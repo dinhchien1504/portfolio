@@ -12,7 +12,7 @@ export const navLinks = [
     {
       id: 3,
       name: 'Work',
-      href: '#work',
+      href: '#project',
     },
     {
       id: 4,
@@ -131,7 +131,7 @@ import framer from "../public/assets/framer.svg"
       desc: 'Selling and Buying old stuff , archiver , life style ',
       subdesc:
         'This is a second-hand clothing marketplace where users can buy and sell pre-owned fashion items. The platform allows sellers to list their clothes with detailed descriptions and images, while buyers can browse, search, and filter items based on categories, sizes, and brands. Secure transactions and a user-friendly interface ensure a seamless shopping experience.',
-      href: '',
+      href: 'https://github.com/dinhchien1504/Web2',
       texture: video1,
       logo: logoPJ2,
       logoStyle: {

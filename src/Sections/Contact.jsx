@@ -50,7 +50,7 @@ const Contact = () => {
     
   }
   return (
-    <section className='c-space my-20'>
+    <section className='c-space my-20 block'>
       
       <div className="relative min-h-screen flex items-center flex-col justify-center ">
         <img src={bgcontact} alt="" className='absolute inset-0 min-h-screen ' />
