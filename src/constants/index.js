@@ -61,6 +61,8 @@ import logoPJ2 from "../public/assets/project-logo2.png"
 import logoPJ3 from "../public/assets/project-logo3.png"
 import logoPJ4 from "../public/assets/project-logo4.png"
 import logoPJ5 from "../public/assets/project-logo5.png"
+import Divine from  "../public/assets/divine.png"
+
 
 
 import spotlight1 from "../public/assets/spotlight1.png"
@@ -168,10 +170,10 @@ import framer from "../public/assets/framer.svg"
       title: 'eCommerce Website ',
       desc: 'A modern fashion eCommerce platform designed to elevate your shopping experience. It offers a seamless way to browse, purchase, and manage your wardrobe with ease, catering to diverse styles and preferences.',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using PHP, JavaScript to enhance shopping.',
+        'With a focus on convenience, integrates secure payments, real-time inventory updates, and personalized recommendations using  PHP, JavaScript to enhance shopping.',
       href: 'https://github.com/Duongnl/Web2',
       texture:web2pj,
-      logo: logoPJ3,
+      logo: Divine,
       logoStyle: {
         backgroundColor: '#60f5a1',
         background:
