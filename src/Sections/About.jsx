@@ -47,7 +47,7 @@ const About = () => {
             <div className="">
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I speacialize in javaScrip/TypeScript with a focus on React and
+                I speacialize in JavaScript/TypeScript with a focus on React and
                 Next.js
               </p>
             </div>

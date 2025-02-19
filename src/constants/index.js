@@ -165,10 +165,10 @@ import framer from "../public/assets/framer.svg"
       ],
     },
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      title: 'eCommerce Website ',
+      desc: 'A modern fashion eCommerce platform designed to elevate your shopping experience. It offers a seamless way to browse, purchase, and manage your wardrobe with ease, catering to diverse styles and preferences.',
       subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using PHP, JavaScript to enhance shopping.',
       href: 'https://github.com/Duongnl/Web2',
       texture:web2pj,
       logo: logoPJ3,
