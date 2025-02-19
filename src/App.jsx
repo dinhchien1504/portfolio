@@ -19,7 +19,6 @@ const App = () => {
     {/* <Experience /> */}
     <Contact />
     <Footer/>
-
     </main>
   )
 }

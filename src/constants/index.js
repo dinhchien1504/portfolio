@@ -71,6 +71,7 @@ import spotlight5 from "../public/assets/spotlight5.png"
 
 import video1 from "../public/textures/project/1.mp4"
 import video2 from "../public/textures/project/pj2.mp4"
+import web2pj from "../public/textures/project/web2pj.mp4"
 
 
 
@@ -163,45 +164,45 @@ import framer from "../public/assets/framer.svg"
         },
       ],
     },
-    // {
-    //   title: 'CarePulse - Health Management System',
-    //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    //   subdesc:
-    //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    //   href: 'https://github.com/Duongnl/Web2',
-    //   texture:text3,
-    //   logo: logoPJ3,
-    //   logoStyle: {
-    //     backgroundColor: '#60f5a1',
-    //     background:
-    //       'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-    //     border: '0.2px solid rgba(208, 213, 221, 1)',
-    //     boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    //   },
-    //   spotlight:spotlight3,
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: imgreact,
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: tailwindcss,
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: typescript,
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: framer,
-    //     },
-    //   ],
-    // },
+    {
+      title: 'CarePulse - Health Management System',
+      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+      subdesc:
+        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+      href: 'https://github.com/Duongnl/Web2',
+      texture:web2pj,
+      logo: logoPJ3,
+      logoStyle: {
+        backgroundColor: '#60f5a1',
+        background:
+          'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+        border: '0.2px solid rgba(208, 213, 221, 1)',
+        boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      },
+      spotlight:spotlight3,
+      tags: [
+        {
+          id: 1,
+          name: 'React.js',
+          path: imgreact,
+        },
+        {
+          id: 2,
+          name: 'TailwindCSS',
+          path: tailwindcss,
+        },
+        {
+          id: 3,
+          name: 'TypeScript',
+          path: typescript,
+        },
+        {
+          id: 4,
+          name: 'Framer Motion',
+          path: framer,
+        },
+      ],
+    },
     // {
     //   title: 'Horizon - Online Banking Platform',
     //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
