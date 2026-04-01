@@ -1,12 +1,9 @@
-import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 import gsap from 'gsap';
 import {useGSAP} from '@gsap/react'
 
 const Target = (props) => {
     const targetRef = useRef();
-
-    const {scene} = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf')
     
     useGSAP (()=> {
         gsap.to(targetRef.current.position, {
@@ -22,9 +19,37 @@ const Target = (props) => {
     })
     
     return (
-        <mesh {...props} ref={targetRef} scale={1.4} rotation={[0,Math.PI/5,0]}  >
-            <primitive object={ scene}/>
-        </mesh>
+        <group {...props} ref={targetRef} scale={1.4} rotation={[0,Math.PI/5,0]}>
+            <mesh castShadow receiveShadow>
+                <cylinderGeometry args={[0.14, 0.18, 2.2, 24]} />
+                <meshStandardMaterial color="#606c80" metalness={0.35} roughness={0.55} />
+            </mesh>
+
+            <mesh position={[0, 1.25, 0]} castShadow receiveShadow>
+                <torusGeometry args={[0.55, 0.08, 22, 64]} />
+                <meshStandardMaterial color="#cfd8e3" metalness={0.5} roughness={0.35} />
+            </mesh>
+
+            <mesh position={[0, 1.25, 0.08]} castShadow receiveShadow>
+                <circleGeometry args={[0.48, 64]} />
+                <meshStandardMaterial color="#111827" />
+            </mesh>
+
+            <mesh position={[0, 1.25, 0.09]} castShadow receiveShadow>
+                <ringGeometry args={[0.28, 0.45, 64]} />
+                <meshStandardMaterial color="#ef4444" emissive="#5f1212" emissiveIntensity={0.35} />
+            </mesh>
+
+            <mesh position={[0, 1.25, 0.1]} castShadow receiveShadow>
+                <circleGeometry args={[0.22, 64]} />
+                <meshStandardMaterial color="#f8fafc" />
+            </mesh>
+
+            <mesh position={[0, -1.25, 0]} castShadow receiveShadow>
+                <cylinderGeometry args={[0.46, 0.56, 0.16, 32]} />
+                <meshStandardMaterial color="#4b5563" metalness={0.25} roughness={0.7} />
+            </mesh>
+        </group>
   )
 }
 
